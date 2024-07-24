@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalıtım</title>
+    <style>
+        body {font-size: 16px; color: lightcoral;}
+        p {color: red;}
+        p {border: 1px solid green;}
+        em {border: inherit;}
+        em {color: initial;}
+        /*altda tanımlamış olduğumuz özellikler globalde tanımlamış olduğmuz
+        özelliği ezer*/
+    </style>
+</head>
+<body>
+    
+    <main>
+        <section style=>
+            <h1 id="page-title" class="text-yellow">Welcome to MovieApp</h1>
+            <p>
+                Lorem ipsum dolor sit amet <em> consectetur </em> adipisicing elit. Ut, distinctio?
+            </p>
+        </section>
+        <section>
+            <h2 id="page-subtitle" class="text-white">How it works?</h2>
+        </section>
+    </main>
+<!--yukarıda yaptığımız örnekte renk özelliği em etiketini de kapsarken
+yine aynı etikete uyguladığımız border özelliği em yi kapsamadı 
+(bu her özellik için farklı olabilir)--> 
+
+</body>
+</html>    

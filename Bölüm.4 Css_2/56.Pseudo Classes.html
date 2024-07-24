@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes</title>
+    <style>
+        a {
+            border: 1px solid gray;
+            padding: 5px 0;
+            display: inline-block;
+            text-decoration: none;
+            width: 60px;
+            text-align: center;
+        }
+
+        a:link {
+            color: red;   
+        }
+        /* link açıldığında */
+        a:visited {
+            color: green;
+        }
+        /* linkin üzerine geldiğimizde */
+        a:hover {
+            color: #fff;
+            background-color: yellow;
+        }
+        /* linke tıkladığımız anda */
+        a:active {
+            color: #fff;
+            background-color: violet;
+        }
+        /* bunların sırası önemli */
+
+        div:hover p {
+            display: block;
+        }
+
+        p {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Pseudo classes -->
+
+    <a href="47.borders.html">Home</a>
+    <a href="44.Box model.html">Products</a>
+    <a href="55.Css combinators.html">About</a>
+
+    <br><br>
+
+    <div>
+        Click here!
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sequi, aut impedit, rem delectus ratione ut in nesciunt id qui commodi fugit nobis consequuntur officia. Assumenda suscipit voluptatem ducimus nisi.
+        </p>
+    </div>
+    <!-- Pseudo elements -->
+    
+</body>
+</html>

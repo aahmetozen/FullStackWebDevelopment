@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elemanları</title>
+    <style>
+        p::first-line {font-weight: bold;
+                        color: brown;
+                        word-spacing: 3px;
+                        letter-spacing: 2px;}
+        p.about::first-line {
+                        color: green;
+        }  
+        p::first-letter{
+                        font-size: 40px;
+        }
+        ::selection{
+            background-color: hotpink;
+        }
+        p::after {
+            content: '\261D';
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto eius quae ea recusandae laboriosam suscipit dolores illo quos, similique eligendi. Harum beatae blanditiis quae, consequatur neque aliquam in nobis minus!
+    </p>
+    <p class="about">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptas at voluptatem sequi harum quo earum reiciendis facilis qui necessitatibus corrupti accusantium quisquam dolorum maxime, similique vel illum laborum consequuntur!
+    </p>
+<!--çift nokta ile kullandığımızda pseudo elemanlarını 
+    tek nokta kullandığımızda pseudo class ını tanımlarız-->
+<!--word spacing: cümleler arasında boşluk bırakır
+    letter spacing: harfler arasında boşluk bırakır-->        
+</body>
+</html>
